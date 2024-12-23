@@ -1,0 +1,7 @@
+execution_env =local
+
+for normal exicution write execution_env=local and delete that remote
+
+appURL1=https://tutorialsninja.com/demo/index.php?route=common/home
+Email=mohan3333@gmail.com
+Password=3333

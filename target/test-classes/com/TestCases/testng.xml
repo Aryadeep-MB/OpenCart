@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+<listeners>
+	<listener class-name="com.Utilities.ExtentsReport_Utils"/>
+</listeners>
+
+    <test name="Test_Linux_chrome" thread-count="5">
+        <parameter name="OS" value="Linux"/>
+        <parameter name="browser" value="chrome"/>
+        
+        <classes>
+            <class name="com.TestCases.TC001_AccountRegistration"/>
+            <class name="com.TestCases.TC002_AccountLogin"/>
+        </classes>
+    </test>
+    
+    
+    <test name="Test_Linux_firefox" thread-count="5">
+        <parameter name="OS" value="Linux"/>
+        <parameter name="browser" value="firefox"/>
+        
+        <classes>
+            <class name="com.TestCases.TC001_AccountRegistration"/>
+            <class name="com.TestCases.TC002_AccountLogin"/>
+        </classes>
+    </test>
+</suite>
